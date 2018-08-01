@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    // typeRoots option has been previously configured
+    "typeRoots": [
+      // add path to @types
+      "node_modules/@types"
+    ],
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -7,8 +12,11 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "sourceMap": true,
+    "allowJs": true,
     "baseUrl": ".",
     "types": [
       "node",
